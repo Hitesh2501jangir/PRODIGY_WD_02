@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <script src="https://kit.fontawesome.com/67da18e5b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header>
+    <h1>Stop Watch</h1>
+    <div>
+        <i class="fa-solid fa-stopwatch"></i>
+    </div>
+   </header> 
+   <main>
+    <div class="timer_container">
+        <div class="timer_display">
+            <h2 id="hour" class="time">0</h2>
+            <h2 class="time_heading">H</h2>
+            <h2 id="minute" class="time">00</h2>
+            <h2 class="time_heading">M</h2>
+            <h2 id="second" class="time">00</h2>
+            <h2 class="time_heading">S</h2>
+            <h2 id="millisecond" class="milli_time">00</h2>
+        </div>
+        <div class="button_box">
+            <button id="lap-button" class="side_btn disabled">LAP</button>
+            <button id="stop-button" class="stop_btn">START</button>
+            <button id="reset-button" class="side_btn disabled">RESET</button>
+        </div>
+    </div>
+    <div class="data_container" id="data_box">
+        <div class="lap_data_container" id="lap-data-box">
+            <div class="heading">
+                <h3>LAP</h3>
+                <h3>TIME</h3>
+                <h3>TOTAL TIME</h3>
+            </div>
+            <div class="lap_div">
+                <p class="lap_num const_Lap_box">1</p>
+                <div class="lap_time">
+                    <p id="t-hr">00</p>
+                    <p>:</p>
+                    <p id="t-min">00</p>
+                    <p>:</p>
+                    <p id="t-sec">00</p>
+                    <p>:</p>
+                    <p id="t-msec"><span>00</span></p>
+                </div>
+                <div class="lap_total_time">
+                    <p id="tt-hr">00</p>
+                    <p>:</p>
+                    <p id="tt-min">00</p>
+                    <p>:</p>
+                    <p id="tt-sec">00</p>
+                    <p>:</p>
+                    <p id="tt-msec"><span>00</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+   </main>
+   <script src="script.js"></script>
+</body>
+</html>
